@@ -1,0 +1,5 @@
+{
+  "name": "Data Resolver",
+  "description": "Gemini 3 Flash quickly reasons through synthetic customer data and chat transcripts into unified records.",
+  "requestFramePermissions": []
+}
