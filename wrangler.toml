@@ -1,0 +1,20 @@
+# wrangler.toml — Cloudflare Pages configuration
+# Docs: https://developers.cloudflare.com/pages/configuration/wrangler-configuration/
+
+name = "identity-resolution-lab"
+compatibility_date = "2024-09-23"
+
+# ── Pages build settings ──────────────────────────────────────────────────────
+[site]
+bucket = "./dist"
+
+# ── Environment variables (non-secret) ───────────────────────────────────────
+# Secrets (e.g. GEMINI_API_KEY) must be set via:
+#   wrangler pages secret put GEMINI_API_KEY
+# or in the Cloudflare dashboard → Pages → Settings → Environment variables.
+# [vars]
+# EXAMPLE_VAR = "value"
+
+# ── Preview environment overrides ────────────────────────────────────────────
+[env.preview]
+name = "identity-resolution-lab-preview"
